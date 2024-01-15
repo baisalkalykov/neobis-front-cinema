@@ -10,7 +10,11 @@ body{
     background: #1a191f;
     font-family: "Open Sans", sans-serif;
 }
-
+.header{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .container{
     max-width: 1200px ;
     margin: 0 auto;
@@ -93,11 +97,30 @@ body{
   font-size: 14px;
 }
 .movie__average__green{
-   border: 1px solid green;
+   border: 2px solid green;
 }
-.movie__average__orange{
-    border: 1px solid orange;
+.header-category{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-.movie__average__red{
-    border: 1px solid red;
+.category{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+.category:hover{
+    width: 170px;
+   height: 45px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    transform: scale(0.9);
+ }
+.category:active{
+    transform:translateY(5px);
+}
+.category-text{
+    font-size: 17px;
+    color: #ffffff;
 }

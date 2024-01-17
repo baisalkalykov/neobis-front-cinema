@@ -23,8 +23,7 @@ const topMovieBtn = document.getElementById('topMovie');
 const realesesMonthMoviesBtn = document.getElementById('realesesMonthMovies');
 const favoriteMoviesBtn = document.getElementById('favoriteMovies'); 
 
-getMovie(API_URL_PREMIERES); 
-getMovie(apiUrl);
+getMovie(API_URL_RELEASES); 
 
 async function getMovie(url) {
     const resp = await fetch(url, {
@@ -38,6 +37,7 @@ async function getMovie(url) {
     showMovies(respData);
 }
 
+ 
 function showMovies(data) {
     const moviesEl = document.querySelector(".movies");
     moviesEl.innerHTML = ""; // Очищаем предыдущие фильмы
@@ -61,7 +61,7 @@ function showMovies(data) {
 
         <img  
         data-kinopoisk-id="${movie.kinopoiskId}" 
-        src="${isFavorite ?  'img/heart-red.svg':'img/heart.svg'}"
+        src="${isFavorite ?  'img/heart-red.png':'img/heart.jpg'}"
         class="favorite-btn">
         
         </div>

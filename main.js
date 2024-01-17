@@ -9,11 +9,11 @@ const apiUrl = "https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_
 // поиск
 const apiSearchUrl=  "https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=";
 // Премьеры месяца
-const API_URL_PREMIERES = 'https:kinopoiskapiunofficial.tech/api/v2.2/films/premieres?year=${year}&month=${month}';
+const API_URL_PREMIERES = "https:kinopoiskapiunofficial.tech/api/v2.2/films/premieres?year=${year}&month=${month}";
 // Топ ожидаемых
-const API_URL_ANTICIPATED = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/collections?type=CLOSES_RELEASES&page=1';
+const API_URL_ANTICIPATED = "https://kinopoiskapiunofficial.tech/api/v2.2/films/collections?type=CLOSES_RELEASES&page=1";
 // Pелизы месяца
-const API_URL_RELEASES = 'https:kinopoiskapiunofficial.tech/api/v2.1/films/releases?year=${year}&month=${month}';
+const API_URL_RELEASES = "https:kinopoiskapiunofficial.tech/api/v2.1/films/releases?year=${year}&month=${month}";
 
 
 
